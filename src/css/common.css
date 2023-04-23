@@ -16,3 +16,74 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* Style the date and time picker input */
+#datetime-picker {
+  font-size: 16px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 200px;
+}
+
+#datetime-picker:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Style the "Start" button */
+button[data-start] {
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button[data-start]:hover,
+button[data-start]:focus {
+  background-color: #0062cc;
+  outline: none;
+}
+
+button[data-start]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Style the timer elements */
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.timer .value {
+  display: block;
+  width: 60px;
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.timer .label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #6c757d;
+}
