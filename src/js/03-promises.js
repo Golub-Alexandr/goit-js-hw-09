@@ -50,11 +50,12 @@ function createPromise(position, delay) {
     setTimeout(() => {
       if (shouldResolve) {
         // Fulfill
-        res({ position, delay });
+        res({ position: position + 1, delay });
       } else {
         // Reject
-        rej({ position, delay });
+        rej({ position: position + 1, delay });
       }
     }, delay);
   });
 }
+
